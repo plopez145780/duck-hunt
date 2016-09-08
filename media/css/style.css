@@ -8,13 +8,41 @@ body {
 	overflow: hidden;
 }
 
+/*#box{
+	position: relative;
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+}
+#form_form>input{
+	text-align: center;
+	margin: 0 auto;
+}*/
+
+
+#menu{
+	background-color: #FFFFFF;
+	height: 50px;
+}
+#menu>p{
+	margin: 0;
+	padding: 0;
+}
+
+
 #duck{
 	position: relative;
-	left: -50px;
+	/*left: -50px;*/
 
-	background-image: url("../img/duck-right.gif");
+	/*background-image: url("../img/duck-dead.gif");
+
 	width: 130px;
 	height: 104px;
+	width: 100px;
+	height: 70px;
+	background-position: -50px -20px;*/
 
 
 }
