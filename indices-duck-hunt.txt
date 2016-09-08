@@ -1,0 +1,37 @@
+DUCK HUNT | INDICES
+
+1. 
+En HTML/CSS, créez une zone où le jeu se déroulera, la scène. Pour ce faire, faites une div avec une taille fixe en pixels (disons 800px * 400px), et mettez-y une image en background (css). Centrez-la horitonalement, et laissez un peu de marge en haut. 
+
+2.
+En HTML, positionnez un oiseau à gauche de cette zone, tout juste à l'extérieur. N'oubliez pas de mettre cet oiseau en position: relative en CSS.
+
+3. 
+En jQuery, animez cet oiseau vers la droite, en animant sa propriété "left". Faites-en sorte qu'il sorte de la scène, mais tout juste. 
+
+4. 
+Mettez cet oiseau sous écoute de l'événement click. Dans la fonction qui se déclenche lors du clic, arrêtez l'animation. 
+
+5.
+L'oiseau est mort. Modifiez l'attribut "src" de l'img de l'oiseau pour refléter ce décès. 
+
+6. 
+Démarrez une nouvelle animation, mais cette fois-ci vers le bas. Vous animez donc la propriété "top". Faites-en sorte que l'oiseau sorte tout juste de la scène. 
+
+7.
+Une fois l'animation terminée, repositionnez brutalement l'oiseau à sa position d'origine, à gauche de l'écran. Utilisez le callback de la fonction animate pour détecter la sortie de l'oiseau. 
+
+8. 
+Relancez l'oiseau (étape 3). 
+
+9.
+Si un oiseau sort de l'écran à droite sans avoir été cliqué, repositionnez le également à gauche, comme à l'étape #7. Utilisez le callback de la fonction animate pour détecter la sortie de l'oiseau. 
+
+a.
+Comptez-le score ! Si un oiseau sort de l'écran à droite, le team "birds" gagne un point. S'il est cliqué avant sa sortie, le team "humans" gagne un point. Pour ce faire, créez deux variables globales à incrémenter, initalisées à zéro. 
+
+b. 
+En CSS : changez le curseur de la souris pour qu'il représente une cible. 
+
+c. 
+Arrêtez la partie si le score atteint 5 pour les oiseaux ou pour les humains. Stoppez tout. Affichez un message alert.

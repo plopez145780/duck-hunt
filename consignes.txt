@@ -1,0 +1,38 @@
+DUCK HUNT | jQuery
+
+L'idée est de créer un jeu totalement ou presque, en jQuery.
+
+Le but du jeu est de tuer le plus de canards possible, sur 10 essais. Si un canard réussi à traverser l'écran, le canard gagne. Si le joueur réussi à tirer sur le canard (en cliquant dessus), le joueur gagne.
+Les canards sont envoyés un par un.
+
+La "scène" de jeu devrait idéalement couvrir la totalité de l'écran, et avoir un background-image de ouf.
+Les canards entrent en scène à la gauche et se dirigent vers la droite.
+Si le joueur réussit à tuer le canard, celui-ci doit arrêter sa course, et tomber, mort, au bas de l'écran.
+Après sa chute ou sa traversée, un autre canard est envoyé, ce pour un total de 10 fois.
+
+Fonctions utiles :
+    ** CSS : mettre le canard en position "relative", sinon ça ne bougera pas ! **
+    $("#unIdentifiant").width()
+    $("#unIdentifiant").height()
+    $("#unIdentifiant").animate()
+    Math.random() //résultat entre 0 et 1... on peut le multiplier ensuite...
+    $("#unIdentifiant").on("mousedown", function(){}) //plus approprié que "click" pour ce jeu
+    $("#unIdentifiant").attr("name", "value"); //pour changer un attribut d'un élément HTML
+    $("#unIdentifiant").css({propriete: valeur}); //pour changer une ou plusieurs propriétés CSS
+
+Options optionnelles du jeu :
+
+    Un affichage du score actuel (visuel svp)
+    Un bouton "Nouvelle partie"
+    Le canard ne démarre pas toujours à la même altitude
+    Le canard ne termine pas sa course à la même altitude
+    Le canard vole du coup en diagonale
+    Le canard vole parfois de la droite vers la gauche
+    Une cible est affichée au lieu du classique curseur de souris
+    Du sang s'affiche lors de la mort d'un canard
+    Vous ajoutez du son...
+    Et pas facile, le canard fait des zig-zags dans l'écran.
+
+======
+
+À remettre au plus tard dimanche 11 sept à 23:59, en pièce jointe d'un email, avec votre nom, à gsylvestre@gmail.com.
