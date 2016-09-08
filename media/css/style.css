@@ -5,4 +5,16 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	overflow: hidden;
+}
+
+#duck{
+	position: relative;
+	left: -50px;
+
+	background-image: url("../img/duck-right.gif");
+	width: 130px;
+	height: 104px;
+
+
 }
