@@ -20,34 +20,26 @@ body {
 	background-color: #FFFFFF;
 	border-radius: 10px;
 }
-
 #player_form>input{
 	text-align: center;
 }
-
 
 #menu{
 	position: absolute;
 	height: 50px;
 }
-#menu>p{
+#score{
 	color: #FFFFFF;
 	margin: 0;
 	padding: 0;
 }
 
-
 #duck{
 	position: relative;
-	/*left: -50px;*/
-
-	/*background-image: url("../img/duck-dead.gif");
-
-	width: 130px;
-	height: 104px;
-	width: 100px;
-	height: 70px;
-	background-position: -50px -20px;*/
-
-
+}
+#eclaboussure{
+	display: none;
+	height: 50px;
+	width: 50px;
+	position: relative;
 }
