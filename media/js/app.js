@@ -9,12 +9,22 @@ function pageFin() {
 	$("body").off();
 	// Création du contenu de la box
 	var $go = $("<h1>").append('Game Over !');
+
+	var $result = $("<h2>");
+	if(score > scoreC){
+		$result.append('Bravo vous avez gagné !');
+	} else if (score < scoreC) {
+		$result.append('Dommage vous avec perdu !');
+	} else{
+		$result.append('Egalité');
+	}
+
 	var $textScore = $("<p>").append('Score de ').append(playerName).append(' : ').append(score);
 	var $btnNouvellePartie = $("<button>").html("Nouvelle Partie");
 	// Ecoute le bouton
 	$btnNouvellePartie.on('click',pageDemarrage);
 	// création d'un bloc div pour centrer le contenu dans #box
-	$blocDiv = $("<div>").append($go).append($("<br>")).append($textScore).append("<br>").append($btnNouvellePartie);
+	$blocDiv = $("<div>").append($go).append($result).append($textScore).append("<br>").append($btnNouvellePartie);
 	// Cible la box, la vide et lui donne son nouveau contenu.
 	$box = $("#box").empty().append($blocDiv);
 	//Affiche la fenetre
@@ -32,9 +42,8 @@ function checkFinJeu() {
 
 /* tue le canard */
 function tuerCanard() {
-	toucher = true;
 	score++;// Incrémente le score
-	$("#score").html("Score : " + score);// Affiche le nouveau score
+	$("#score").html("Score : " + score + " (Score canard :" + scoreC + ")");// Affiche le nouveau score
 
 	$("#tir_reussit").get(0).play();// Joue le son du fusil
 
@@ -79,6 +88,8 @@ function deplacerGaucheDroite(){
 		left: largeurFenetre,
 		top: hauteurRandArrive,},
 		vitesseDuck, function() {
+			scoreC++;
+			$("#score").html("Score : " + score + " (Score canard :" + scoreC + ")");// Affiche le nouveau score
 			checkFinJeu();
 	});
 }
@@ -99,6 +110,8 @@ function deplacerDroiteGauche(){
 		left: '-'+duck.width()+'px',
 		top: hauteurRandArrive,},
 		vitesseDuck, function() {
+			scoreC++;
+			$("#score").html("Score : " + score + " (Score canard :" + scoreC + ")");// Affiche le nouveau score
 			checkFinJeu();
 	});
 }
@@ -135,7 +148,8 @@ function init(){
 	pasDeLaVitesse = (3000-1500)/nbDuck;// nombre de ms a envelé a la au temps de l'animation a chaque tour (=vitesse canard) : (vitesse lente - vitesse rapide) / nombre de tour
 	playerName = $("#player_name").val();
 	score = 0;//score humain
-	$("#score").html("Score : " + score);//Affiche le score du joueur
+	scoreC = 0;//score canard
+	$("#score").html("Score : " + score + " (Score canard :" + scoreC + ")");// Affiche le nouveau score
 	$('html').css('cursor','crosshair');// Change le curseur pour une croix
 
 	tourDeJeu();// Lance 1 canard
