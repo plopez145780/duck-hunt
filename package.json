@@ -21,6 +21,9 @@
     "url": "https://github.com/plopez145780/duck-hunt/issues"
   },
   "homepage": "https://github.com/plopez145780/duck-hunt#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
   "devDependencies": {
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",
