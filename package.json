@@ -1,0 +1,29 @@
+{
+  "name": "duck-hunt",
+  "version": "0.0.1",
+  "description": "Duck Hunt Game in Js",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plopez145780/duck-hunt.git"
+  },
+  "keywords": [
+    "duck hunt",
+    "game"
+  ],
+  "author": "plopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plopez145780/duck-hunt/issues"
+  },
+  "homepage": "https://github.com/plopez145780/duck-hunt#readme",
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "prettier": "2.2.1"
+  }
+}
