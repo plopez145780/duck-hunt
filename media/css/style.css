@@ -1,45 +1,45 @@
 body {
-	margin: 0;
-	padding: 0;
-	background-image: url("../img/background.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
 }
 
-#box{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+#box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
-	position: relative;
-	width: 300px;
-	height: 230px;
-	margin: auto;
-	background-color: #FFFFFF;
-	border-radius: 10px;
+  position: relative;
+  width: 300px;
+  height: 230px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
-#player_form>input{
-	text-align: center;
-}
-
-#menu{
-	position: absolute;
-	height: 50px;
-}
-#score{
-	color: #FFFFFF;
-	margin: 0;
-	padding: 0;
+#player_form > input {
+  text-align: center;
 }
 
-#duck{
-	position: relative;
+#menu {
+  position: absolute;
+  height: 50px;
 }
-#eclaboussure{
-	display: none;
-	height: 50px;
-	width: 50px;
-	position: relative;
+#score {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+#duck {
+  position: relative;
+}
+#eclaboussure {
+  display: none;
+  height: 50px;
+  width: 50px;
+  position: relative;
 }
